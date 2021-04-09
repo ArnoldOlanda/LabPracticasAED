@@ -1,13 +1,14 @@
 
 public class Rectangulo {
+	//Atributos
 	Coordenada esquina1;
 	Coordenada esquina2;
-	
+	//Constructor
 	public Rectangulo(Coordenada c1, Coordenada c2) {
 		setEsquina1(c1);
 		setEsquina2(c2);
 	}
-
+	//Getters and Setters
 	public Coordenada getEsquina1() {
 		return this.esquina1;
 	}
@@ -23,7 +24,7 @@ public class Rectangulo {
 	public void setEsquina2(Coordenada esquina2) {
 		this.esquina2 = esquina2;
 	}
-	
+	//Metodo to String
 
 	@Override
 	public String toString() {

@@ -9,7 +9,9 @@ public class Principal {
 		Rectangulo r2 = new Rectangulo(new Coordenada(20,4),new Coordenada(1,3));
 		
 		System.out.println("Rectangulo A: " + r1);
+		System.out.println("------------------------------------");
 		System.out.println("Rectangulo B: " + r2);
+		
 
 	}
 
