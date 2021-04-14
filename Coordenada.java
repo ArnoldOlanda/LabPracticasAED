@@ -9,7 +9,7 @@ public class Coordenada {
 		this.x = 0;
 		this.y = 0;
 	}
-	public Coordenada(int x, int y) {
+	public Coordenada(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
@@ -40,6 +40,34 @@ public class Coordenada {
 		double dis = Math.sqrt( Math.pow( c2.x-c1.x, 2 ) + Math.pow( c2.y-c1.y, 2));
 		return dis;
 	}
+	public  boolean esMayor(Coordenada c) {
+		if(this.getX() > c.getX() && this.getY() > c.getY()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public boolean esMayorX(Coordenada c) {
+		if(this.getX() > c.getX()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public boolean esMayorY(Coordenada c) {
+		if(this.getY() > c.getY()) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public boolean equals(Coordenada coord) {
+		if(!(coord instanceof Coordenada))
+			return false;
+		Coordenada c = (Coordenada) coord;
+		return this.x == c.x || this.y == c.y ;
+	}
+	
 	//Mostrando coordenadas
 	@Override
 	public String toString() {
